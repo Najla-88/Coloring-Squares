@@ -1,2 +1,3 @@
-# Coloring-Squares
-Some squares and two buttons to change squares colors depending on them
+Zahr Al-Saqqaf
+Najla Al-Qassemi
+Hala Al-Afoori

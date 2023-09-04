@@ -3,8 +3,8 @@ var currentColor = 'red';
 
 let content = "";
 
-for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 5; j++) {
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
         content += `<button id="block1" type="button " class="btn"></button>`;
     }
     content += `<br>`
@@ -12,7 +12,7 @@ for (let i = 0; i < 5; i++) {
 document.getElementById("show").innerHTML = content;
 
 let allButtons = document.querySelectorAll("#show button");
-console.log(allButtons);
+// console.log(allButtons);
 
 
 allButtons.forEach(element => {
@@ -30,4 +30,12 @@ function setRed() {
 
 function setBlue() {
     currentColor = 'blue';
+}
+
+function reset() {
+    let allButtons = document.querySelectorAll("#show button");
+    allButtons.forEach(element => {
+            element.style = "background:white;";
+        })
+        // console.log(allButtons)
 }
